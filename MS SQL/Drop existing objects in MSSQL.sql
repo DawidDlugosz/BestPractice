@@ -64,5 +64,5 @@ IF EXISTS (
     AND SCHEMA_NAME(O.schema_id) = @SchemaName
     AND OBJECT_NAME(O.object_id) = @TableName
 )
-    EXEC('DROP INDEX [' + @IndexName + '] ON [' + @SchemaName + '].[' + @TableName + ']'
+    EXEC('DROP INDEX [' + @IndexName + '] ON [' + @SchemaName + '].[' + @TableName + ']')
 GO
