@@ -1,0 +1,11 @@
+﻿NullObject Pattern stosujemy gdy: 
+1. konkretna implementacja obiektu jest zawsze zwracana za pomocą fabryki
+2. bardzo często musimy sprawdzać czy obiekt jest pusty 
+3. obiekt powinien się zachować w konkretny sposób gdy będzie pusty
+
+Zalety:
+1. Ujednolica efekt wykonania konkretnej funkcjonalności obiekut w przypadku null'a
+2. Sprawia że kod staje się czytelniejszy bo nie trzeba za każdym razem sprawdzać czy obiekt jest null'em
+
+Wady:
+1. Ten wzorzec trzeba stosować ostrożnie ponieważ może ukryć błędy powstałe w przypadku zwracania pustej implementacji zamiast konkretnego obiektu.
