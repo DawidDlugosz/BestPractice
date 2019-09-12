@@ -9,9 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PermissionGateway", "..\Per
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Caching", "02-Caching", "{308F22C9-C745-4D1A-9B5E-DAD2C9F43FD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisCaching", "..\PermissionApi\02-Caching\RedisCaching\RedisCaching.csproj", "{125CE94C-8049-4073-8486-3935F841C0F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisCaching", "..\PermissionApi\02-Caching\RedisCaching\RedisCaching.csproj", "{125CE94C-8049-4073-8486-3935F841C0F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheConsole", "..\PermissionApi\02-Caching\CacheConsole\CacheConsole.csproj", "{C9665118-C043-43A0-9CCF-532A1242BE8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheConsole", "..\PermissionApi\02-Caching\CacheConsole\CacheConsole.csproj", "{C9665118-C043-43A0-9CCF-532A1242BE8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-MessageBroker", "03-MessageBroker", "{FA81E507-294D-4B7E-99F9-16350D76698A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-WebAPI", "04-WebAPI", "{B25549B6-204A-45FC-AE30-6675F73856C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBroker.Client", "..\PermissionApi\03-MessageBroker\MessageBroker.Client\MessageBroker.Client.csproj", "{6F561ED4-CEC8-4584-9154-524DB63BA5B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +37,10 @@ Global
 		{C9665118-C043-43A0-9CCF-532A1242BE8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9665118-C043-43A0-9CCF-532A1242BE8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9665118-C043-43A0-9CCF-532A1242BE8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F561ED4-CEC8-4584-9154-524DB63BA5B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F561ED4-CEC8-4584-9154-524DB63BA5B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F561ED4-CEC8-4584-9154-524DB63BA5B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F561ED4-CEC8-4584-9154-524DB63BA5B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +49,7 @@ Global
 		{4CF196FD-DF13-4D11-A925-AC07388E45CB} = {7198296F-AE84-4135-B8F7-552CA1AB0239}
 		{125CE94C-8049-4073-8486-3935F841C0F1} = {308F22C9-C745-4D1A-9B5E-DAD2C9F43FD1}
 		{C9665118-C043-43A0-9CCF-532A1242BE8C} = {308F22C9-C745-4D1A-9B5E-DAD2C9F43FD1}
+		{6F561ED4-CEC8-4584-9154-524DB63BA5B8} = {FA81E507-294D-4B7E-99F9-16350D76698A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DDA7CC31-48BC-44D6-A6B1-9634E0770559}
