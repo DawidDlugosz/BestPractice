@@ -3,24 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using PermissionGateway.Models;
 
 namespace PermissionGateway.Controllers
 {
     [Route("api/[controller]")]
-    public class PermissionsController : Controller
+    public class PermissionsController : ControllerBase
     {
         // GET api/permissions
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet(nameof(GetPermission))]
+        public IActionResult GetPermission()
         {
-            return new string[] { "value1", "value2" };
-        }
+            var response = new
+            {
+                name = nameof(GetPermission),
+                href = Url.Link(nameof(GetPermission), null)
+            };
 
-        // GET api/permissions/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
+            return Ok(response);
         }
 
         // POST api/permissions
