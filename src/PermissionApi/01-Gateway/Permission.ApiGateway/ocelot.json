@@ -1,0 +1,50 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/values",
+      "UpstreamPathTemplate": "/test",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 51558
+        }
+      ],
+      "DelegatingHandlers": [
+        "TestHandler"
+      ],
+      "Key": "Laura"
+    },
+    {
+      "DownstreamPathTemplate": "/",
+      "UpstreamPathTemplate": "/tom",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 51882
+        }
+      ],
+      "Key": "Tom"
+    }
+  ],
+  "Aggregates": [
+    {
+      "ReRouteKeys": [
+        "Tom",
+        "Laura"
+      ],
+      "UpstreamPathTemplate": "/CreateToken/PnL/{user}",
+      "Aggregator": "FakeDefinedAggregator"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:7000"
+  }
+}
